@@ -44,3 +44,7 @@ function loadComposerConfig($file)
 
 global $composerLoader;
 $composerLoader = require locateComposerVendors().'/autoload.php';
+
+if (class_exists('Doctrine\\Common\\Annotations\\AnnotationRegistry')) {
+    Doctrine\Common\Annotations\AnnotationRegistry::registerLoader(array($composerLoader, 'loadClass'));
+}
