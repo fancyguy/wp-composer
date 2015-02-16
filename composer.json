@@ -1,0 +1,14 @@
+{
+    "name": "fancyguy/wp-composer",
+    "license": "MIT",
+    "type": "wordpress-mu-plugin",
+    "authors": [
+        {
+            "name": "Steve Buzonas",
+            "email": "steve@fancyguy.com"
+        }
+    ],
+    "extra": {
+        "file": "fg-composer.php"
+    }
+}
